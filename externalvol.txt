@@ -11,3 +11,5 @@ CREATE OR REPLACE EXTERNAL VOLUME snowlake_exvol
 
       
 DESC EXTERNAL VOLUME SNOWLAKE_EXVOL;
+
+//External id and user_id
