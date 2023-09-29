@@ -1,0 +1,13 @@
+CREATE OR REPLACE EXTERNAL VOLUME snowlake_exvol
+   STORAGE_LOCATIONS =
+      (
+         (
+            NAME = 'my-s3-us-east-1'
+            STORAGE_PROVIDER = 'S3'
+            STORAGE_BASE_URL = 's3://snowlake-bucket/sales_data/'
+            STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::745882220951:role/snowflake_role1'
+                )  
+      );
+
+      
+DESC EXTERNAL VOLUME SNOWLAKE_EXVOL;
